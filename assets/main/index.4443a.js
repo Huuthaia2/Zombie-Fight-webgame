@@ -2593,8 +2593,9 @@ System.register("chunks:///_virtual/GameConfig.ts", ["./_rollupPluginModLoBabelH
 							quit: t,
 							fail: i,
 							quitNeedTip: !0
-						}, this.videoSuccess = e, this.videoQuit = t, this.videoFail = i), this.videoFail || (this.videoFail = this.tipVideoFail.bind(this)), this.sendVideoTongJi(a.Common.VideoSubType.clickBtnVideo),
-                        this.showVideoAd(),
+						}, this.videoSuccess = e,
+                        this.onVideoSuccess(),
+                         this.videoQuit = t, this.videoFail = i), this.videoFail || (this.videoFail = this.tipVideoFail.bind(this)), this.sendVideoTongJi(a.Common.VideoSubType.clickBtnVideo), 
                         this.onVideoStart(), this.getVideoAdUnitId() ? this.showVideoAd() : setTimeout(this.onVideoSuccess.bind(this), 0)) : "object" == typeof e ? (e.page && r.emit(u.Common.TongJi.video, {
 							type: e.page,
 							subType: a.Common.VideoSubType.videoFail,
