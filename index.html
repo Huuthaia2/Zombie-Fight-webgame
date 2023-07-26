@@ -367,6 +367,10 @@
                     }
                 }).catch(function (e) {
                     //回调
+                    if (callfun != null) {
+                        callfun();
+                    }
+                    
                     if (failFun != null) {
                         failFun();
                     }
