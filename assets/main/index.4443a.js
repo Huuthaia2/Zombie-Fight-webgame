@@ -2602,6 +2602,7 @@ System.register("chunks:///_virtual/GameConfig.ts", ["./_rollupPluginModLoBabelH
 							battle: e.battle
 						}), e.fail && e.fail()) : i && i()
 					}, t.onVideoStart = function() {
+                        this.onVideoSuccess(),
 						console.error("onVideoStart"), r.emit(u.Common.AudioEvent.pause), r.emit(u.Common.DirectorEvent.pauseLevel), r.emit(u.Common.UIEvent.showTouchMask)
 					}, t.onVideoEnd = function() {
 						console.error("onVideoEnd"), r.emit(u.Common.AudioEvent.resume), r.emit(u.Common.DirectorEvent.resumeLevel), r.emit(u.Common.UIEvent.hideTouchMask)
